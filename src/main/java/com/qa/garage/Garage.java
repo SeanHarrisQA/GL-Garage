@@ -41,6 +41,14 @@ public class Garage {
 		return bill;
 	}
 
+	public Vehicle find(int id) throws VehicleNotFoundException {
+		for (Vehicle v : this.vehicles) {
+			if (v.getId() == id)
+				return v;
+		}
+		throw new VehicleNotFoundException("No vehicle found with id: " + id);
+	}
+
 	public boolean remove(int id) {
 		for (Vehicle v : this.vehicles) {
 			if (v.getId() == id) {

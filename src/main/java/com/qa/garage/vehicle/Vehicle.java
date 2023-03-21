@@ -8,10 +8,13 @@ public abstract class Vehicle {
 
 	private int id;
 
+	private static int count;
+
 	public Vehicle(int numWheels, String colour) {
 		super();
 		this.numWheels = numWheels;
 		this.colour = colour;
+		this.id = ++count;
 	}
 
 	public abstract int calcBill();
