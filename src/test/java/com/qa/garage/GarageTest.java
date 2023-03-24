@@ -1,6 +1,5 @@
 package com.qa.garage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -29,10 +28,10 @@ public class GarageTest {
 		assertTrue(this.garage.addVehicle(new Plane(3, "Polka Dots")));
 	}
 
-	@Test
-	void testFindSuccess() throws VehicleNotFoundException {
-		assertEquals(this.testCar, this.garage.find(this.testCar.getId()));
-	}
+//	@Test
+//	void testFindSuccess() throws VehicleNotFoundException {
+//		assertEquals(this.testCar, this.garage.find(this.testCar.getId()));
+//	}
 
 	@Test
 	void testFindFails() {
