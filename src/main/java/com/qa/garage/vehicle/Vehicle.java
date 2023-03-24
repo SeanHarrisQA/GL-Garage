@@ -6,7 +6,7 @@ public abstract class Vehicle {
 
 	private String colour;
 
-	private int id;
+	protected int id;
 
 	private static int count;
 

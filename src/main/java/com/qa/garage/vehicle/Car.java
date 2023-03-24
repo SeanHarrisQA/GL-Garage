@@ -1,6 +1,7 @@
 package com.qa.garage.vehicle;
 
 public class Car extends Vehicle {
+	
 
 	public Car(int numWheels, String colour) {
 		super(numWheels, colour);

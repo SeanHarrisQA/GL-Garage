@@ -1,6 +1,7 @@
 package com.qa.garage;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.qa.garage.vehicle.Boat;
@@ -10,7 +11,17 @@ import com.qa.garage.vehicle.Vehicle;
 
 public class Garage {
 
-	private List<Vehicle> vehicles = new ArrayList<>();
+	private List<Vehicle> vehicles;
+
+	public Garage() {
+		super();
+		this.vehicles = new ArrayList<>();
+	}
+
+	public Garage(Vehicle... vehicles) {
+		super();
+		this.vehicles = new ArrayList<>(Arrays.asList(vehicles));
+	}
 
 	public boolean addVehicle(Vehicle v) {
 		return this.vehicles.add(v);
