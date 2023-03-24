@@ -55,7 +55,7 @@ public class Garage {
 	public Vehicle find(int id) throws VehicleNotFoundException {
 		for (Vehicle v : this.vehicles) {
 			if (v.getId() == id)
-				return v;
+				return null;
 		}
 		throw new VehicleNotFoundException("No vehicle found with id: " + id);
 	}
